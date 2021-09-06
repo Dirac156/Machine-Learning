@@ -8,13 +8,13 @@ def find_subject(text: str) -> List[str]:
     """ Find subject of a text """
 
     # load the text to the modal
-    doc=nlp(text)
+    text_loaded = nlp(text)
 
     # Find the subject
-    sub_toks = [tok for tok in doc if (tok.dep_ == "nsubj") ]
+    subjects = [token for token in text_loaded if (token.dep_ == "nsubj") ]
 
     #return the subject
-    return sub_toks 
+    return subjects 
 
 
 def identify_subject(text: str) -> str:

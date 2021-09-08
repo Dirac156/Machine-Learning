@@ -2,7 +2,7 @@
 
 
 from module.read_file import read_text_file
-from summarize_text2 import summarize_text
+from summarize_text import summarize_text
 
 
 text = read_text_file('./0-test.txt')

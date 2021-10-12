@@ -1,0 +1,3 @@
+locationtagger
+nltk
+spacy

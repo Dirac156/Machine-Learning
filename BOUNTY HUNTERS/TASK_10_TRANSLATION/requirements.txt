@@ -1,0 +1,7 @@
+spacy-nightly
+spacy
+spacy-langdetect
+deep_translator
+autocorrect
+langdetect
+nltk

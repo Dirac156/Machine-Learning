@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  slackApi:
+    image: "diracmmd/task_14"
+    env_file:
+      - .env

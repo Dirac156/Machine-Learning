@@ -3,7 +3,7 @@ import spacy
 from spacy_langdetect import LanguageDetector
 from spacy.language import Language
 
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_sm")
 
 
 def create_lang_detector(nlp, name):

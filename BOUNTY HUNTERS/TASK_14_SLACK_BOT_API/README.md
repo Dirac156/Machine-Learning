@@ -1,38 +1,27 @@
-# Project Title: Traanslate Untranslated/Mistranslated words
+# Project Title: Enable API
 
 ## Project Description
 
-This project comporte modules and function to find to correct translation errors.
 
-The project has two version:
-
-1. Version-1:
-
-* spacy, deep_translator and autocorrect: Detect language using spacy library. Turn non-english sentence to english using Google translator then use autocorrect to check for final errors.
-
-2. Version-2:
-
-* nltk, langdetect and deepl: Detect language using langdetect and translate the whole sentence to english if this was not the case. Deepl automaticaly fix errors after translation.
 
 ## Run Project
 
 ### Requirements
 
-* spacy-nightly
+* slackclient
+* python-dotenv
 * spacy
-* spacy-langdetect
-* deep_translator
-* nltk
-* langdetect
 
 ### Download container
 
-* docker pull diracmmd/task_10
+* docker pull diracmmd/task_14
 
-* docker run -it diracmmd/task_10
+### Run project
+
+* docker-compose up
 
 ### Expected Output
 
-* Success: 'correct text'
+* Success: (True, [])
 
-* Error: <Error Message>
+* Error: (False, error)
